@@ -10,6 +10,9 @@ module.exports = {
     database: 'd97al156bgcbvb',
     port: 5432,
     ssl: true,
+    dialectOptions: {
+        ssl: true
+    },
     define: {
         timestamps: true,// significa q toda tabela vai ter um campo com created_at(Onde armazena a data q o registro foi criado), updated_at(data quer foi atualizada)
         underscored: true,//coloca um padrao na criação das tabelas 
