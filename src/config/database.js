@@ -9,9 +9,11 @@ module.exports = {
     password: '310cf49ac31278bd5cdb5553bbd819c165dbd7fef709a58903ca694fae727ab1',
     database: 'd97al156bgcbvb',
     port: 5432,
-    ssl: true,
     dialectOptions: {
-        ssl: true
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
     },
     define: {
         timestamps: true,// significa q toda tabela vai ter um campo com created_at(Onde armazena a data q o registro foi criado), updated_at(data quer foi atualizada)
