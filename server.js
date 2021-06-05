@@ -11,4 +11,4 @@ app.use('/api', routes);
 
 //usando cors para que outra aplicações possam acessar minha API
 
-app.listen(3001);
+app.listen( process.env.PORT || 3001);
