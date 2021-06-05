@@ -1,0 +1,7 @@
+//Esse arquivo serve para que o sequelize entenda a nossa config para i banco
+//importando o path do node para lidar com caminhos 
+const path = require('path');
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src' , 'database' , 'migrations' ),
+};
